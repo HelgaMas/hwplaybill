@@ -6,16 +6,16 @@ public class MovieManager {
     private Movie[] movies = new Movie[0];
     private int limit;
 
+    public MovieManager() {
+        limit = 10;
+    }
+
     public MovieManager(int limit) {
         this.limit = limit;
     }
 
     public void add(Movie movie) {
         save(movie);
-    }
-
-    public MovieManager() {
-        limit = 10;
     }
 
     public Movie[] findAll() {
