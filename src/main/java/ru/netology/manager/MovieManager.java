@@ -1,6 +1,6 @@
 package ru.netology.manager;
 
-import domain.Movie;
+import ru.netology.domain.Movie;
 
 public class MovieManager {
     private Movie[] movies = new Movie[0];

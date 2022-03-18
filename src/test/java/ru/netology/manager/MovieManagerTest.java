@@ -1,8 +1,8 @@
 package ru.netology.manager;
 
-import domain.Movie;
-
 import org.junit.jupiter.api.Test;
+import ru.netology.domain.Movie;
+import ru.netology.manager.MovieManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -38,7 +38,6 @@ class MovieManagerTest {
         movieManager.add(first);
         movieManager.add(second);
         movieManager.add(third);
-        movieManager.findAll();
 
         Movie[] expected = {first, second, third};
         Movie[] actual = movieManager.findAll();
